@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="Remote" />
+
+    <style name="Remote.Container">
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

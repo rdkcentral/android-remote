@@ -1,0 +1,31 @@
+<resources>
+	<dimen name="button_row_marginBottom">4dp</dimen>
+	<dimen name="positive_negative_button_height">114dp</dimen>
+	<dimen name="option_button_height">32.3dp</dimen>
+	<dimen name="positive_negative_button_width">61dp</dimen>
+	<dimen name="circle_button_size_normal">45.5dp</dimen>
+	<dimen name="play_pause_fastforward_icon_size">13.6dp</dimen>
+	<dimen name="option_button_width">51dp</dimen>
+	<dimen name="mute_button_size">18dp</dimen>
+	<dimen name="icon_image_size_normal">9.2dp</dimen>
+	<dimen name="button_row_height">40dp</dimen>
+	<dimen name="numpad_button_width">51dp</dimen>
+	<dimen name="dpad_a_size">40dp</dimen>
+	<dimen name="zero_dp">0dp</dimen>
+	<dimen name="ok_button_size">23.5dp</dimen>
+	<dimen name="button_row_width">235.8dp</dimen>
+	<dimen name="button_size_normal">40dp</dimen>
+	<dimen name="positive_negative_button_margin">13.6dp</dimen>
+	<dimen name="circle_button_size_big">56.5dp</dimen>
+	<dimen name="numpad_button_height">44dp</dimen>
+	<dimen name="circle_buttons_row_width">174.2dp</dimen>
+	<dimen name="mic_icon_size">22.4dp</dimen>
+	<dimen name="keyboard_arrow_size">29dp</dimen>
+	<dimen name="logo_width">62dp</dimen>
+	<dimen name="text_size_normal">11sp</dimen>
+	<dimen name="text_size_big">15.4sp</dimen>
+	<dimen name="text_size_small">7.7sp</dimen>
+	<dimen name="text_size_medium">12.1sp</dimen>
+	<dimen name="text_size_large">17.6sp</dimen>
+	<dimen name="numpad_padding">20dp</dimen>
+</resources>

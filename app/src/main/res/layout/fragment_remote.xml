@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/remote_view"
+        style="@style/Remote.Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/remote_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/button_row_marginBottom">
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/button_row_marginBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.52"
+            android:baselineAligned="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/positive_negative_button_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_double_disabled">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_image_size_normal"
+                    android:layout_height="@dimen/icon_image_size_normal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/positive_negative_button_margin"
+                    android:src="@drawable/volume_up_icon" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_image_size_normal"
+                    android:layout_height="@dimen/icon_image_size_normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/positive_negative_button_margin"
+                    android:src="@drawable/volume_down_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/label_vol"
+                    android:textColor="#26f5f5f5"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/remote_button_keyboard"
+                    android:layout_width="@dimen/option_button_width"
+                    android:layout_height="@dimen/option_button_height"
+                    android:background="@drawable/remote_button_top_bg"
+                    android:enabled="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_keyboard"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@drawable/button_num_disabled"
+                    android:enabled="false">
+
+                    <ImageView
+                        android:layout_width="@dimen/mute_button_size"
+                        android:layout_height="@dimen/mute_button_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/mute_icon_disabled" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_mute"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="@dimen/option_button_width"
+                    android:layout_height="@dimen/option_button_height"
+                    android:background="@drawable/remote_button_top_bg"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_power"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/positive_negative_button_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/remote_button_double_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/label_ch"
+                    android:textColor="#fff5f5f5"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/remote_button_ch_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/remote_button_combo"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_image_size_normal"
+                            android:layout_height="@dimen/icon_image_size_normal"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icon_page_up" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/remote_button_ch_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/remote_button_combo"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_image_size_normal"
+                            android:layout_height="@dimen/icon_image_size_normal"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/icon_page_down" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- end top -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.58"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/button_row_marginBottom"
+                android:weightSum="7">
+
+                <RelativeLayout
+                    android:id="@+id/remote_button_previous"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_height="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_previous" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remote_button_play"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+
+                    <ImageView
+                        android:layout_width="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_height="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_play" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remote_button_forward"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_height="@dimen/play_pause_fastforward_icon_size"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_forward" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/button_row_marginBottom"
+                android:weightSum="7">
+
+                <Button
+                    android:id="@+id/remote_button_exit"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:text="@string/label_exit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/remote_button_record"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_image_size_normal"
+                        android:layout_height="@dimen/icon_image_size_normal"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_red_oval" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/remote_button_pg_up"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_image_size_normal"
+                        android:layout_height="@dimen/icon_image_size_normal"
+                        android:layout_marginBottom="-4dp"
+                        android:src="@drawable/icon_page_up" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_pg"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/button_row_marginBottom"
+                android:weightSum="7">
+
+                <Button
+                    android:id="@+id/remote_button_guide"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:text="@string/label_guide"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/remote_button_xfinity"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+
+                    <TextView
+                        android:layout_width="@dimen/logo_width"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/label_menu"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#50000000" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/remote_button_pg_down"
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_pg"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_image_size_normal"
+                        android:layout_height="@dimen/icon_image_size_normal"
+                        android:layout_marginTop="-4dp"
+                        android:src="@drawable/icon_page_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/button_row_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/remote_dpad_a"
+                    android:layout_width="@dimen/dpad_a_size"
+                    android:layout_height="@dimen/dpad_a_size"
+                    android:background="@drawable/remote_triangle"
+                    android:text="@string/label_a"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/remote_dpad_up"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textColor="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/keyboard_arrow_size"
+                        android:src="@drawable/remote_dpad_up" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/remote_dpad_b"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@drawable/remote_square"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_b"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/button_row_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <RelativeLayout
+                    android:id="@+id/remote_dpad_left"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/white">
+
+                    <ImageView
+                        android:layout_width="@dimen/keyboard_arrow_size"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="-4dp"
+                        android:src="@drawable/remote_dpad_left" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="@dimen/button_size_normal"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/remote_dpad_circle"
+                    android:layout_width="@dimen/ok_button_size"
+                    android:layout_height="@dimen/ok_button_size"
+                    android:background="@drawable/remote_dpad_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start">
+
+                    <RelativeLayout
+                        android:id="@+id/remote_dpad_right"
+                        android:layout_width="@dimen/button_size_normal"
+                        android:layout_height="@dimen/button_size_normal"
+                        android:layout_marginStart="-8dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textColor="@color/white">
+
+                        <ImageView
+                            android:layout_width="@dimen/keyboard_arrow_size"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/remote_dpad_right" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/button_row_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/button_row_marginBottom"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/remote_dpad_c"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@drawable/remote_button_circle"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_c"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/remote_dpad_down"
+                    android:layout_width="@dimen/button_size_normal"
+                    android:layout_height="@dimen/button_size_normal"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textAlignment="center"
+                    android:textColor="@color/white">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/keyboard_arrow_size"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-4dp"
+                        android:src="@drawable/remote_dpad_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/remote_dpad_d"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/remote_rhombus"
+                    android:includeFontPadding="false"
+                    android:text="@string/label_d"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:layout_marginBottom="@dimen/button_row_marginBottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/remote_button_left_arrow"
+                android:layout_width="@dimen/circle_button_size_normal"
+                android:layout_height="@dimen/circle_button_size_normal"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/remote_button_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/play_pause_fastforward_icon_size"
+                    android:layout_height="@dimen/play_pause_fastforward_icon_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remote_button_mic"
+                android:layout_width="@dimen/circle_button_size_big"
+                android:layout_height="@dimen/circle_button_size_big"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/remote_button_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/mic_icon_size"
+                    android:layout_height="@dimen/mic_icon_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_mic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remote_button_info"
+                android:layout_width="@dimen/circle_button_size_normal"
+                android:layout_height="@dimen/circle_button_size_normal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/remote_button_circle"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="@dimen/play_pause_fastforward_icon_size"
+                    android:layout_height="@dimen/play_pause_fastforward_icon_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_info" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/numpad_padding"
+            android:paddingRight="@dimen/numpad_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+                    <!-- placeholder -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_abc"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_def"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_ghi"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_jkl"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_6"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_mno"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_7"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_pqrs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_tuv"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_9"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_wxyz"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/numpad_button_height">
+
+                    <!-- Placeholder-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/numpad_button_height"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/remote_button_bg"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:id="@+id/text_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/version_text_margin_left"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/remote_numpad_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:text="@string/label_0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_space"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/numpad_button_height"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/remote_button_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-4dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:text="@string/label_dots"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Remote</string>
+
+    <!-- Controls strings -->
+    <string name="label_keyboard">Keyboard</string>
+    <string name="label_vol">VOL</string>
+    <string name="label_mute">Mute</string>
+    <string name="label_ch">CH</string>
+    <string name="label_power">Power</string>
+    <string name="label_exit">Exit</string>
+    <string name="label_guide">Guide</string>
+    <string name="label_pg">PG</string>
+    <string name="label_a">A</string>
+    <string name="label_b">B</string>
+    <string name="label_c">C</string>
+    <string name="label_d">D</string>
+
+    <!-- Keyboard strings -->
+    <string name="label_1">1</string>
+    <string name="label_2">2</string>
+    <string name="label_3">3</string>
+    <string name="label_4">4</string>
+    <string name="label_5">5</string>
+    <string name="label_6">6</string>
+    <string name="label_7">7</string>
+    <string name="label_8">8</string>
+    <string name="label_9">9</string>
+    <string name="label_0">0</string>
+    <string name="label_abc">ABC</string>
+    <string name="label_def">DEF</string>
+    <string name="label_ghi">GHI</string>
+    <string name="label_jkl">JKL</string>
+    <string name="label_mno">MNO</string>
+    <string name="label_pqrs">PQRS</string>
+    <string name="label_tuv">TUV</string>
+    <string name="label_wxyz">WXYZ</string>
+    <string name="label_space">Space</string>
+    <string name="label_dots">…</string>
+    <string name="label_menu">Menu</string>
+    <string name="dialog_paired_device_list_message">Do you want to connect with this Paired Device?</string>
+
+</resources>

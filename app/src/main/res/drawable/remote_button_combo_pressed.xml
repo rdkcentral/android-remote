@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:exitFadeDuration="@android:integer/config_shortAnimTime"
+    android:color="#000000" >
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle" >
+            <solid android:color="#000000" />
+            <corners android:radius="14dp" />
+            <padding
+                android:left="3dp"
+                android:right="3dp"
+                android:top="3dp"
+                android:bottom="3dp" />
+        </shape>
+    </item>
+</ripple>

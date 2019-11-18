@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_small">7sp</dimen>
+    <dimen name="text_size_normal">10sp</dimen>
+    <dimen name="text_size_medium">11sp</dimen>
+    <dimen name="text_size_big">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="option_button_width">50dp</dimen>
+    <dimen name="option_button_height">33dp</dimen>
+    <dimen name="positive_negative_button_width">60dp</dimen>
+    <dimen name="positive_negative_button_height">108dp</dimen>
+    <dimen name="icon_image_size_normal">12dp</dimen>
+    <dimen name="button_row_width">218dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="button_size_normal">40dp</dimen>
+    <dimen name="button_row_height">40dp</dimen>
+    <dimen name="button_row_marginBottom">5dp</dimen>
+    <dimen name="positive_negative_button_margin">16dp</dimen>
+    <dimen name="mute_button_size">20dp</dimen>
+    <dimen name="play_pause_fastforward_icon_size">16dp</dimen>
+    <dimen name="numpad_button_width">50dp</dimen>
+    <dimen name="numpad_button_height">44dp</dimen>
+    <dimen name="circle_button_size_normal">45dp</dimen>
+    <dimen name="circle_button_size_big">55dp</dimen>
+    <dimen name="logo_width">60dp</dimen>
+    <dimen name="keyboard_arrow_size">30dp</dimen>
+    <dimen name="dpad_a_size">40dp</dimen>
+    <dimen name="ok_button_size">25dp</dimen>
+    <dimen name="circle_buttons_row_width">162dp</dimen>
+    <dimen name="mic_icon_size">24dp</dimen>
+    <dimen name="numpad_padding">20dp</dimen>
+    <dimen name="version_text_margin_left">4dp</dimen>
+
+</resources>
