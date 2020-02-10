@@ -217,7 +217,7 @@ public class HerculesApp extends Application {
 
         /**
          * The following code is based on other sources from developer.android.com website
-         * with the original license can be accessed from
+         * (Apache-2.0 licensed) with the original license at:
          * https://developer.android.com/license
          *
          * The original source can be accessed from
