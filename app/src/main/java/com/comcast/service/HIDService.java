@@ -501,7 +501,7 @@ public class HIDService extends Service {
 
     /**
      * The following code, the method bytesToHex and hexStringToByteArray are
-     * based on other sources with the original license is
+     * based on other sources and MIT-licensed at:
      * https://github.com/cloudinary/cloudinary_java/blob/master/LICENSE
      *
      * The original source can be accessed from
@@ -702,6 +702,12 @@ public class HIDService extends Service {
             return value;
         }
 
+        /*
+        * The following code is based on sources from the developer.android.com website
+        * Copyright (C) 2017 The Android Open Source Project
+        * Licensed under the Apache License, Version 2.0 (the "License");
+        */
+        
         public void onCharacteristicReadRequest(BluetoothDevice bluetoothDevice, int requestId, int offset, BluetoothGattCharacteristic bluetoothGattCharacteristic) {
             mHandler.post(() -> {
                 Log.d(TAG, "onCharacteristicReadRequest");
